@@ -1,0 +1,419 @@
+/* ===== Section ===== */
+.research {
+  padding: 80px 10%;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background Pattern */
+.research::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 15% 20%, rgba(99, 102, 241, 0.08) 0%, transparent 50%),
+    radial-gradient(circle at 85% 80%, rgba(139, 92, 246, 0.08) 0%, transparent 50%);
+  animation: backgroundShift 15s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 0.6; transform: scale(1); }
+  50% { opacity: 1; transform: scale(1.05); }
+}
+
+/* ===== Title ===== */
+.research-title {
+  font-size: 48px;
+  font-weight: 800;
+  background: linear-gradient(135deg, #60a5fa 0%, #a78bfa 50%, #c084fc 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 5px;
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 1;
+}
+
+.research-subtitle {
+  font-size: 15px;
+  color: #cbd5e1;
+  margin-bottom: 10px;
+  letter-spacing: 1.2px;
+  font-weight: 300;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Grid ===== */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+  max-width: 1400px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* ===== Card ===== */
+.research-card {
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
+  backdrop-filter: blur(20px);
+  padding: 32px 28px;
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.3),
+    0 0 0 1px rgba(99, 102, 241, 0.2),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+
+/* Card Glow Effect */
+.research-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #6366f1, #8b5cf6, #a78bfa);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.research-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 
+    0 20px 60px rgba(99, 102, 241, 0.3),
+    0 0 0 1px rgba(139, 92, 246, 0.4),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  border-color: rgba(139, 92, 246, 0.4);
+}
+
+.research-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== VIP Card ===== */
+.vip-card {
+  background: linear-gradient(145deg, rgba(255, 215, 0, 0.1) 0%, rgba(30, 41, 59, 0.95) 100%);
+  border: 1px solid rgba(255, 215, 0, 0.3);
+  box-shadow: 
+    0 10px 40px rgba(255, 215, 0, 0.2),
+    0 0 0 1px rgba(255, 215, 0, 0.3),
+    inset 0 1px 0 rgba(255, 215, 0, 0.1);
+}
+
+.vip-card::before {
+  background: linear-gradient(90deg, #ffd700, #ffed4e, #ffd700);
+}
+
+.vip-card:hover {
+  box-shadow: 
+    0 20px 60px rgba(255, 215, 0, 0.4),
+    0 0 0 1px rgba(255, 215, 0, 0.5),
+    inset 0 1px 0 rgba(255, 215, 0, 0.2);
+  border-color: rgba(255, 215, 0, 0.5);
+}
+
+/* ===== VIP Badge ===== */
+.vip-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #0f172a;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Icon ===== */
+.research-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  border-radius: 50%;
+  font-size: 18px;
+  color: #ffffff;
+  margin-right: 12px;
+  box-shadow: 
+    0 6px 20px rgba(99, 102, 241, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.2);
+  transition: all 0.4s ease;
+  flex-shrink: 0;
+}
+
+.vip-card .research-icon {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #0f172a;
+  box-shadow: 
+    0 6px 20px rgba(255, 215, 0, 0.4),
+    inset 0 2px 4px rgba(255, 255, 255, 0.3);
+}
+
+.research-card:hover .research-icon {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 
+    0 10px 28px rgba(139, 92, 246, 0.6),
+    inset 0 2px 6px rgba(255, 255, 255, 0.3);
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+}
+
+.vip-card:hover .research-icon {
+  box-shadow: 
+    0 10px 28px rgba(255, 215, 0, 0.6),
+    inset 0 2px 6px rgba(255, 255, 255, 0.4);
+  background: linear-gradient(135deg, #ffed4e, #ffd700);
+}
+
+/* ===== Heading ===== */
+.research-card h3 {
+  font-size: 20px;
+  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  display: flex;
+  align-items: center;
+}
+
+.vip-card h3 {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ===== Topic ===== */
+.research-topic {
+  font-size: 13px;
+  color: #94a3b8;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+/* ===== Description ===== */
+.research-description {
+  font-size: 14px;
+  color: #cbd5e1;
+  line-height: 1.7;
+  font-weight: 300;
+  margin-bottom: 18px;
+}
+
+/* ===== Meta ===== */
+.research-meta {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.research-year,
+.research-status {
+  display: inline-block;
+  background: rgba(99, 102, 241, 0.15);
+  color: #a78bfa;
+  padding: 5px 12px;
+  border-radius: 16px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+}
+
+.vip-card .research-year,
+.vip-card .research-status {
+  background: rgba(255, 215, 0, 0.15);
+  color: #ffd700;
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+/* ===== Buttons ===== */
+.research-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.research-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+}
+
+.research-link:hover {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 92, 246, 0.5);
+}
+
+.vip-link {
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
+  color: #0f172a;
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.4);
+  border-color: rgba(255, 215, 0, 0.3);
+}
+
+.vip-link:hover {
+  background: linear-gradient(135deg, #ffed4e, #ffd700);
+  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.6);
+}
+
+/* ===== See More Button ===== */
+.research-see-more {
+  margin-top: 40px;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(99, 102, 241, 0.4);
+  position: relative;
+  z-index: 1;
+}
+
+.research-see-more:hover {
+  background: linear-gradient(135deg, #8b5cf6, #a78bfa);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.6);
+}
+
+/* ===== Animation Delays ===== */
+.research-card:nth-child(1) { animation-delay: 0.1s; }
+.research-card:nth-child(2) { animation-delay: 0.2s; }
+.research-card:nth-child(3) { animation-delay: 0.3s; }
+.research-card:nth-child(4) { animation-delay: 0.4s; }
+
+/* ===== Large Desktop (1400px+) ===== */
+@media (min-width: 1400px) {
+  .research { padding: 100px 12%; }
+  .research-title { font-size: 52px; }
+  .research-grid { gap: 32px; }
+  .research-card { padding: 36px 32px; }
+  .research-icon { width: 46px; height: 46px; font-size: 22px; margin-right: 14px; }
+  .research-card h3 { font-size: 22px; }
+  .research-description { font-size: 15px; }
+}
+
+/* ===== Tablet Landscape (1024px) ===== */
+@media (max-width: 1024px) {
+  .research { padding: 70px 6%; }
+  .research-title { font-size: 40px; }
+  .research-subtitle { font-size: 14px; margin-bottom: 50px; }
+  .research-grid { gap: 24px; }
+  .research-card { padding: 28px 24px; }
+  .research-icon { width: 38px; height: 38px; font-size: 18px; margin-right: 10px; }
+  .research-card h3 { font-size: 18px; }
+  .research-description { font-size: 13.5px; }
+}
+
+/* ===== Tablet Portrait (768px) ===== */
+@media (max-width: 768px) {
+  .research { padding: 60px 5%; }
+  .research-title { font-size: 34px; }
+  .research-subtitle { font-size: 13px; margin-bottom: 40px; }
+  .research-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .research-card { padding: 24px 20px; border-radius: 16px; }
+  .research-icon { width: 36px; height: 36px; font-size: 16px; margin-right: 8px; }
+  .research-card h3 { font-size: 17px; margin-bottom: 12px; }
+  .research-topic { font-size: 12px; }
+  .research-description { font-size: 13px; line-height: 1.6; }
+}
+
+/* ===== Mobile (480px) ===== */
+@media (max-width: 480px) {
+  .research { padding: 50px 4%; }
+  .research-title { font-size: 28px; }
+  .research-subtitle { font-size: 12px; margin-bottom: 32px; }
+  .research-grid { 
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    gap: 16px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 10px;
+  }
+  .research-grid::-webkit-scrollbar {
+    height: 6px;
+  }
+  .research-grid::-webkit-scrollbar-track {
+    background: rgba(30, 41, 59, 0.5);
+    border-radius: 10px;
+  }
+  .research-grid::-webkit-scrollbar-thumb {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    border-radius: 10px;
+  }
+  .research-card { 
+    min-width: 280px;
+    flex-shrink: 0;
+    padding: 22px 18px; 
+    border-radius: 14px;
+    scroll-snap-align: start;
+  }
+  .research-icon { width: 34px; height: 34px; font-size: 15px; margin-right: 8px; }
+  .research-card h3 { font-size: 16px; margin-bottom: 10px; }
+  .research-topic { font-size: 11px; margin-bottom: 10px; }
+  .research-description { font-size: 12.5px; line-height: 1.5; margin-bottom: 14px; }
+  .research-meta { gap: 8px; margin-bottom: 14px; }
+  .research-year, .research-status { font-size: 10px; padding: 4px 10px; }
+  .research-link { padding: 8px 14px; font-size: 12px; }
+  .research-see-more { padding: 12px 28px; font-size: 14px; }
+}
+
+/* ===== Small Mobile (360px) ===== */
+@media (max-width: 360px) {
+  .research-title { font-size: 24px; }
+  .research-subtitle { font-size: 11px; }
+  .research-card { 
+    min-width: 260px;
+    padding: 20px 16px; 
+  }
+  .research-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
+  .research-card h3 { font-size: 15px; }
+  .research-topic { font-size: 10px; }
+  .research-description { font-size: 12px; }
+  .vip-badge { font-size: 10px; padding: 5px 12px; top: 12px; right: 12px; }
+}
