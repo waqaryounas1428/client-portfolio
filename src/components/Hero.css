@@ -49,10 +49,12 @@
   font-family: 'Poppins', 'Montserrat', sans-serif;
   background: linear-gradient(
     135deg,
-    #ffd700 0%,
-    #ffed4e 25%,
-    #ffc107 60%,
-    #ffd700 100%
+    #00f5a0 0%,
+    #00d9f5 20%,
+    #a78bfa 40%,
+    #f59e0b 60%,
+    #ef4444 80%,
+    #ec4899 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
