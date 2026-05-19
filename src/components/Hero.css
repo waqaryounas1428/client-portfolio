@@ -37,7 +37,7 @@
 }
 
 .hello {
-  font-size: 84px;
+  font-size: 22px;
   color: #fbbf24;
   font-weight: 700;
   letter-spacing: 0.5px;
@@ -159,7 +159,7 @@
 @media (min-width: 1400px) {
   #home { padding: 30px 10% 80px; }
   .user-name { font-size: 64px; }
-  .hello { font-size: 28px; }
+  .hello { font-size: 24px; }
   .titles { font-size: 20px; letter-spacing: 1.5px; }
   .intro { font-size: 16px; max-width: 720px; }
   .hero-right img { width: 340px; height: 480px; }
@@ -169,7 +169,7 @@
 @media (max-width: 1024px) {
   #home { padding: 25px 6% 60px; }
   .user-name { font-size: 42px; }
-  .hello { font-size: 20px; }
+  .hello { font-size: 18px; }
   .titles { 
     font-size: 13px; 
     letter-spacing: 1.2px;
