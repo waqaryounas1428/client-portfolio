@@ -4,14 +4,14 @@
   justify-content: space-between;
   align-items: center;
   padding: 14px 8%;
-  background: rgba(15, 23, 42, 0.7);
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   backdrop-filter: blur(10px);
-  color: #cbd5e1;
+  color: #1e40af;
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
-  border-bottom: 1px solid rgba(99, 102, 241, 0.2);
+  box-shadow: 0 2px 20px rgba(251, 191, 36, 0.3);
+  border-bottom: 1px solid rgba(251, 191, 36, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -19,7 +19,7 @@
 .logo {
   font-size: 22px;
   font-weight: 700;
-  background: linear-gradient(135deg, #60a5fa, #a78bfa);
+  background: linear-gradient(135deg, #1e40af, #3b82f6);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -38,7 +38,7 @@
 }
 .nav-links a {
   text-decoration: none;
-  color: #cbd5e1;
+  color: #1e40af;
   font-size: 14px;
   font-weight: 500;
   transition: all 0.3s ease;
@@ -52,21 +52,21 @@
   height: 2px;
   bottom: -4px;
   left: 0;
-  background: linear-gradient(90deg, #60a5fa, #a78bfa);
+  background: linear-gradient(90deg, #1e40af, #3b82f6);
   transition: width 0.3s ease;
 }
 .nav-links a:hover::after {
   width: 100%;
 }
 .nav-links a:hover {
-  color: #60a5fa;
+  color: #3b82f6;
 }
 /* ===== Hamburger ===== */
 .menu-icon {
   display: none;
   font-size: 26px;
   cursor: pointer;
-  color: #60a5fa;
+  color: #1e40af;
   line-height: 1;
 }
 /* ===== Large Desktop (1400px+) ===== */
@@ -101,7 +101,7 @@
     top: 100%;
     right: 0;
     left: 0;
-    background: rgba(15, 23, 42, 0.95);
+    background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
     backdrop-filter: blur(12px);
     flex-direction: column;
     gap: 0;
@@ -109,8 +109,8 @@
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease, padding 0.3s ease;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-    border-top: 1px solid rgba(99, 102, 241, 0.2);
+    box-shadow: 0 8px 24px rgba(251, 191, 36, 0.3);
+    border-top: 1px solid rgba(251, 191, 36, 0.2);
   }
 
   .nav-links.active {
@@ -126,8 +126,8 @@
     display: block;
     padding: 12px 6%;
     font-size: 15px;
-    color: #cbd5e1;
-    border-bottom: 1px solid rgba(99, 102, 241, 0.1);
+    color: #1e40af;
+    border-bottom: 1px solid rgba(251, 191, 36, 0.1);
   }
 
   .nav-links a::after {
@@ -135,8 +135,8 @@
   }
 
   .nav-links a:hover {
-    background: rgba(99, 102, 241, 0.15);
-    color: #60a5fa;
+    background: rgba(251, 191, 36, 0.15);
+    color: #3b82f6;
     padding-left: calc(6% + 6px);
   }
 }
