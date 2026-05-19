@@ -283,16 +283,6 @@ Contributions are welcome! Please follow these steps:
 ## 📝 License
 
 This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-## 📧 Contact
-
-**Shahid Mir**
-- 📧 Email: shahidmir1302@icloud.com
-- 📱 Phone: 03403698788
-- 📘 Facebook: [Facebook Profile](https://www.facebook.com/share/18rt5j8PwW/?mibextid=wwXIfr)
-- 📷 Instagram: [Instagram Profile](https://www.instagram.com/shahidmir_2?igsh=NnY1bDVpOTN6Y3g2&utm_source=qr)
-- 💼 LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/nasrullah-mastoi-117a3840b)
-
 ## 🙏 Acknowledgments
 
 - React Icons for beautiful icons
