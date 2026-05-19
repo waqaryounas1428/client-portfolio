@@ -261,19 +261,6 @@
   border-color: #f59e0b;
 }
 
-
-.contact-info-card:hover::before {
-  opacity: 1;
-}
-
-.contact-info-card:hover {
-  transform: translateY(-6px) scale(1.01);
-  box-shadow: 
-    0 25px 70px rgba(59, 130, 246, 0.25),
-    0 10px 25px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 1);
-}
-
 /* ===== Contact Items ===== */
 .contact-items {
   display: flex;
@@ -399,7 +386,15 @@
   }
 
   .contact-bottom {
+    flex-direction: column;
+    align-items: center;
     gap: 25px;
+  }
+  
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+    width: 100%;
   }
 
   .contact-title { font-size: 24px; margin-bottom: 16px; }
@@ -407,7 +402,7 @@
   .contact-description-card { padding: 14px 16px; }
   .contact-info-card { padding: 14px 16px; }
   .contact-image-card { padding: 10px; }
-  .contact-image { width: 180px; height: 240px; }
+  .contact-image { width: 180px; height: 240px; margin: 0 auto; }
   .contact-item { padding: 10px 12px; }
   .contact-item a, .contact-item span { font-size: 12px; }
   .contact-icon { font-size: 16px; }
@@ -421,7 +416,15 @@
   }
   
   .contact-bottom {
+    flex-direction: column;
+    align-items: center;
     gap: 14px;
+  }
+  
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+    width: 100%;
   }
   
   /* Title and description reduced but same layout */
@@ -438,8 +441,8 @@
   }
   
   .contact-description {
-    font-size: 9px;
-    line-height: 1.5;
+    font-size: 11px;
+    line-height: 1.6;
   }
   
   /* Contact info card reduced */
@@ -454,7 +457,7 @@
     border-radius: 8px;
   }
   
-  .contact-item a, .contact-item span { font-size: 9px; }
+  .contact-item a, .contact-item span { font-size: 10px; }
   .contact-icon { font-size: 12px; margin-right: 6px; }
   
   /* Image card reduced */
@@ -468,6 +471,7 @@
     height: 135px; 
     border-radius: 10px;
     object-fit: cover;
+    margin: 0 auto;
   }
 }
 
@@ -479,7 +483,15 @@
   }
   
   .contact-bottom {
+    flex-direction: column;
+    align-items: center;
     gap: 10px;
+  }
+  
+  .contact-left,
+  .contact-right {
+    max-width: 100%;
+    width: 100%;
   }
   
   /* Extra reduced for small screens */
@@ -496,8 +508,8 @@
   }
   
   .contact-description {
-    font-size: 8px;
-    line-height: 1.4;
+    font-size: 10px;
+    line-height: 1.5;
   }
   
   /* Contact info card extra reduced */
@@ -512,7 +524,7 @@
     border-radius: 7px;
   }
   
-  .contact-item a, .contact-item span { font-size: 8px; }
+  .contact-item a, .contact-item span { font-size: 9px; }
   .contact-icon { font-size: 11px; margin-right: 5px; }
   
   /* Image card extra reduced */
@@ -525,5 +537,6 @@
     width: 85px; 
     height: 115px;
     border-radius: 8px;
+    margin: 0 auto;
   }
 }
