@@ -405,7 +405,7 @@
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
-  .research-title { font-size: 24px; }
+  .research-title { font-size: 22px; }
   .research-subtitle { font-size: 11px; }
   .research-card { 
     min-width: 260px;
@@ -416,4 +416,10 @@
   .research-topic { font-size: 10px; }
   .research-description { font-size: 12px; }
   .vip-badge { font-size: 10px; padding: 5px 12px; top: 12px; right: 12px; }
+}
+
+/* ===== Extra Small Mobile (320px) ===== */
+@media (max-width: 320px) {
+  .research-title { font-size: 20px; }
+  .research-subtitle { font-size: 10px; }
 }

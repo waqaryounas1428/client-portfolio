@@ -134,9 +134,16 @@
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
-  .tool-title { font-size: 22px; }
+  .tool-title { font-size: 20px; }
+  .tool-subtitle { font-size: 12px; }
   .tool-grid { grid-template-columns: 1fr; gap: 12px; }
   .tool-card { padding: 18px 14px; }
   .tool-card h3 { font-size: 13px; }
   .tools span { font-size: 11px; }
+}
+
+/* ===== Extra Small Mobile (320px) ===== */
+@media (max-width: 320px) {
+  .tool-title { font-size: 18px; }
+  .tool-subtitle { font-size: 11px; }
 }

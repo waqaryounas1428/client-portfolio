@@ -254,7 +254,7 @@
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
-  .timeline-title { font-size: 24px; }
+  .timeline-title { font-size: 22px; }
   .timeline-subtitle { font-size: 11px; }
   .timeline-card { 
     min-width: 260px;
@@ -263,4 +263,10 @@
   .timeline-icon { width: 32px; height: 32px; font-size: 14px; margin-right: 6px; }
   .timeline-card h3 { font-size: 14px; }
   .timeline-card p { font-size: 12px; }
+}
+
+/* ===== Extra Small Mobile (320px) ===== */
+@media (max-width: 320px) {
+  .timeline-title { font-size: 20px; }
+  .timeline-subtitle { font-size: 10px; }
 }

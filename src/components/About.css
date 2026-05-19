@@ -122,10 +122,17 @@
 
 /* ===== Small Mobile (360px) ===== */
 @media (max-width: 360px) {
-  .about-title { font-size: 22px; }
+  .about-title { font-size: 20px; }
+  .about-subtitle { font-size: 11px; }
   .about-content { grid-template-columns: 1fr; gap: 12px; }
   .about-card { padding: 18px 14px; }
   .about-card h3 { font-size: 14px; }
   .about-card p { font-size: 12px; }
   .about-icon { font-size: 26px; }
+}
+
+/* ===== Extra Small Mobile (320px) ===== */
+@media (max-width: 320px) {
+  .about-title { font-size: 18px; }
+  .about-subtitle { font-size: 10px; }
 }
