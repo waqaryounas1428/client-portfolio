@@ -221,8 +221,9 @@
   }
 
   .cards {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
   }
 
   .card {
@@ -259,10 +260,9 @@
   }
 
   .cards {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 100%;
   }
 
   .card {

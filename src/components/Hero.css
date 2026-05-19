@@ -177,7 +177,15 @@
   }
   .intro { font-size: 13.5px; padding: 22px 26px; }
   .hero-right img { width: 260px; height: 370px; }
-  .content-wrapper { gap: 32px; }
+  .content-wrapper { 
+    gap: 32px;
+    flex-direction: column-reverse;
+  }
+  .intro-left,
+  .img-right {
+    flex: unset;
+    width: 100%;
+  }
 }
 
 /* ===== Tablet Portrait (768px) ===== */
