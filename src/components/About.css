@@ -1,20 +1,44 @@
 /* ===== Section ===== */
 .about {
   padding: 60px 10%;
-  background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+  background: linear-gradient(135deg, #0a0f1e 0%, #1a1f35 50%, #0f172a 100%);
   text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Animated Background Pattern */
+.about::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%),
+    radial-gradient(circle at 80% 50%, rgba(255, 215, 0, 0.03) 0%, transparent 50%);
+  animation: backgroundShift 10s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes backgroundShift {
+  0%, 100% { opacity: 0.5; }
+  50% { opacity: 1; }
 }
 
 .about-container {
   max-width: 1100px;
   margin: 0 auto;
+  position: relative;
+  z-index: 1;
 }
 
 /* ===== Headings ===== */
 .about-title {
   font-size: 44px;
   font-weight: 700;
-  background: linear-gradient(135deg, #a78bfa, #8b5cf6);
+  background: linear-gradient(135deg, #ffd700, #ffed4e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -23,7 +47,7 @@
 
 .about-subtitle {
   font-size: 15px;
-  color: #7c3aed;
+  color: #fbbf24;
   margin-bottom: 36px;
   letter-spacing: 1px;
 }
@@ -38,37 +62,37 @@
 
 /* ===== Card ===== */
 .about-card {
-  background: linear-gradient(145deg, #ffffff 0%, #fef3c7 100%);
+  background: linear-gradient(145deg, rgba(30, 41, 59, 0.95) 0%, rgba(15, 23, 42, 0.98) 100%);
   backdrop-filter: blur(10px);
   padding: 28px 20px;
   border-radius: 18px;
-  box-shadow: 0 6px 22px rgba(251, 191, 36, 0.25);
+  box-shadow: 0 6px 22px rgba(255, 215, 0, 0.25);
   transition: all 0.3s ease;
-  border: 2px solid #fbbf24;
+  border: 2px solid rgba(255, 215, 0, 0.3);
 }
 
 .about-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 14px 36px rgba(251, 191, 36, 0.35);
-  border-color: #f59e0b;
+  box-shadow: 0 14px 36px rgba(255, 215, 0, 0.35);
+  border-color: #ffd700;
 }
 
 .about-icon {
   font-size: 38px;
-  color: #f59e0b;
+  color: #ffd700;
   margin-bottom: 14px;
 }
 
 .about-card h3 {
   font-size: 18px;
-  color: #0f172a;
+  color: #ffd700;
   margin-bottom: 12px;
   font-weight: 600;
 }
 
 .about-card p {
   font-size: 13.5px;
-  color: #1e293b;
+  color: #cbd5e1;
   line-height: 1.75;
 }
 
