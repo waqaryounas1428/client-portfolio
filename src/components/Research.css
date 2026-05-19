@@ -341,7 +341,10 @@
   .research { padding: 70px 6%; }
   .research-title { font-size: 40px; }
   .research-subtitle { font-size: 14px; margin-bottom: 50px; }
-  .research-grid { gap: 24px; }
+  .research-grid { 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 24px; 
+  }
   .research-card { padding: 28px 24px; }
   .research-icon { width: 38px; height: 38px; font-size: 18px; margin-right: 10px; }
   .research-card h3 { font-size: 18px; }
@@ -353,7 +356,12 @@
   .research { padding: 60px 5%; }
   .research-title { font-size: 34px; }
   .research-subtitle { font-size: 13px; margin-bottom: 40px; }
-  .research-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .research-grid { 
+    grid-template-columns: 1fr; 
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
   .research-card { padding: 24px 20px; border-radius: 16px; }
   .research-icon { width: 36px; height: 36px; font-size: 16px; margin-right: 8px; }
   .research-card h3 { font-size: 17px; margin-bottom: 12px; }
