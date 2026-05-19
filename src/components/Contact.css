@@ -18,6 +18,26 @@
   overflow: hidden;
 }
 
+/* ===== Loading State ===== */
+.contact-section.loading {
+  background: 
+    linear-gradient(135deg, 
+      #e0f2fe 0%, 
+      #dbeafe 25%, 
+      #bfdbfe 50%, 
+      #dbeafe 75%, 
+      #e0f2fe 100%
+    );
+  background-size: 400% 400%;
+  animation: loadingGradient 2s ease infinite;
+}
+
+@keyframes loadingGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
 /* Animated Background Pattern */
 .contact-section::before {
   content: '';
@@ -179,7 +199,7 @@
 
 .contact-description {
   font-size: 16px;
-  color: #475569;
+  color: #1e293b;
   line-height: 2;
   margin-bottom: 0;
   font-weight: 400;
@@ -188,14 +208,14 @@
 
 /* ===== Description Card ===== */
 .contact-description-card {
-  background: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(145deg, #ffffff 0%, #fef3c7 100%);
   backdrop-filter: blur(20px);
   padding: 32px 40px;
   border-radius: 28px;
-  border: 1px solid rgba(59, 130, 246, 0.15);
+  border: 2px solid #fbbf24;
   box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    0 4px 12px rgba(0, 0, 0, 0.05);
+    0 10px 30px rgba(251, 191, 36, 0.25),
+    0 4px 12px rgba(251, 191, 36, 0.15);
   transition: all 0.4s ease;
   max-width: 980px;
   width: 100%;
@@ -206,27 +226,27 @@
 .contact-description-card:hover {
   transform: translateY(-4px);
   box-shadow: 
-    0 15px 40px rgba(0, 0, 0, 0.12),
-    0 6px 16px rgba(0, 0, 0, 0.08);
-  border-color: rgba(59, 130, 246, 0.25);
+    0 15px 40px rgba(251, 191, 36, 0.35),
+    0 6px 16px rgba(251, 191, 36, 0.25);
+  border-color: #f59e0b;
 }
 
 .contact-description .highlight {
-  color: #3b82f6;
+  color: #d97706;
   font-weight: 700;
   transition: color 0.3s ease;
 }
 
 /* ===== Contact Info Card ===== */
 .contact-info-card {
-  background: rgba(255, 255, 255, 0.98);
+  background: linear-gradient(145deg, #ffffff 0%, #fef3c7 100%);
   backdrop-filter: blur(20px);
   padding: 36px 40px;
   border-radius: 28px;
-  border: 1px solid rgba(59, 130, 246, 0.15);
+  border: 2px solid #fbbf24;
   box-shadow: 
-    0 10px 30px rgba(0, 0, 0, 0.08),
-    0 4px 12px rgba(0, 0, 0, 0.05);
+    0 10px 30px rgba(251, 191, 36, 0.25),
+    0 4px 12px rgba(251, 191, 36, 0.15);
   transition: all 0.4s ease;
   width: 100%;
   position: relative;
@@ -236,9 +256,9 @@
 .contact-info-card:hover {
   transform: translateY(-4px);
   box-shadow: 
-    0 15px 40px rgba(0, 0, 0, 0.12),
-    0 6px 16px rgba(0, 0, 0, 0.08);
-  border-color: rgba(59, 130, 246, 0.25);
+    0 15px 40px rgba(251, 191, 36, 0.35),
+    0 6px 16px rgba(251, 191, 36, 0.25);
+  border-color: #f59e0b;
 }
 
 
@@ -264,40 +284,40 @@
 .contact-item {
   display: flex;
   align-items: center;
-  background: rgba(249, 250, 251, 0.8);
+  background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%);
   padding: 16px 20px;
   border-radius: 14px;
-  color: #1e293b;
+  color: #78350f;
   transition: all 0.3s ease;
-  border: 1px solid rgba(59, 130, 246, 0.1);
+  border: 1px solid #fbbf24;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
 
 .contact-item:hover {
-  background: rgba(239, 246, 255, 1);
+  background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
   transform: translateX(8px);
-  border-color: rgba(59, 130, 246, 0.3);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.1);
+  border-color: #f59e0b;
+  box-shadow: 0 4px 12px rgba(251, 191, 36, 0.3);
 }
 
 .contact-icon {
   font-size: 22px;
   margin-right: 16px;
-  color: #3b82f6;
+  color: #f59e0b;
   flex-shrink: 0;
   transition: all 0.3s ease;
 }
 
 .contact-item:hover .contact-icon {
   transform: scale(1.1);
-  color: #2563eb;
+  color: #d97706;
 }
 
 .contact-item a,
 .contact-item span {
-  color: #475569;
+  color: #78350f;
   text-decoration: none;
   font-size: 15px;
   font-weight: 500;
@@ -306,11 +326,11 @@
 
 .contact-item:hover a,
 .contact-item:hover span {
-  color: #1e293b;
+  color: #451a03;
 }
 
 .contact-item a:hover {
-  color: #3b82f6;
+  color: #d97706;
 }
 
 /* ===== Right Image ===== */

@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: center;
   box-sizing: border-box;
-  background: linear-gradient(135deg, #0a0e1a 0%, #0f172a 50%, #1a1f2e 100%);
+  background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 50%, #ddd6fe 100%);
 }
 
 /* ===== Name Title ===== */
@@ -79,28 +79,28 @@
 }
 
 .intro {
-  background: rgba(30, 41, 59, 0.95);
+  background: linear-gradient(145deg, #ffffff 0%, #fef3c7 100%);
   backdrop-filter: blur(12px);
   padding: 28px 32px;
   border-radius: 20px;
-  box-shadow: 0 8px 28px rgba(124, 58, 237, 0.15);
+  box-shadow: 0 8px 28px rgba(251, 191, 36, 0.25);
   width: 100%;
   max-width: 660px;
   font-size: 14.5px;
   line-height: 1.8;
-  color: #cbd5e1;
+  color: #78350f;
   transition: all 0.3s ease;
-  border: 1px solid rgba(124, 58, 237, 0.25);
+  border: 2px solid #fbbf24;
 }
 
 .intro:hover {
   transform: translateY(-4px);
-  box-shadow: 0 16px 40px rgba(124, 58, 237, 0.14);
-  border-color: rgba(124, 58, 237, 0.28);
+  box-shadow: 0 16px 40px rgba(251, 191, 36, 0.35);
+  border-color: #f59e0b;
 }
 
 .highlight {
-  color: #a78bfa;
+  color: #d97706;
   font-weight: 700;
 }
 
